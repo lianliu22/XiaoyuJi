@@ -1,6 +1,6 @@
 .footer {
   align-items: center;
-  background-image: url('images/footer/footer.svg');
+  background-image: url('/images/footer/footer.svg');
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +43,7 @@
   }
 
   .right .indicator {
-    background-image: url('images/footer/right.svg');
+    background-image: url('/images/footer/right.svg');
     margin-left: 22px;
     order: 2;
   }
