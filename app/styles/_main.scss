@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  color: $white;
+}
+
+html,
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: $font_default;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body,
+.app {
+  background-color: $black;
+  min-height: 100%;
+}
+

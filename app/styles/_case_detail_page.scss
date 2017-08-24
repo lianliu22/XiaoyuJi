@@ -1,0 +1,93 @@
+.case-detail-page {
+  background-color: $sand;
+
+  .intro {
+    background-color: $sienna-2;
+    padding-bottom: 80px;
+    padding-left: 22.3%;
+    padding-top: 81px;
+
+    .container {
+      width: 35.3%;
+    }
+
+    .title {
+      font-size: 54px / $font_default * 1em;
+      font-weight: bold;
+      letter-spacing: 4.5px;
+      line-height: 1;
+      text-align: left;
+    }
+
+    .content {
+      letter-spacing: 0.7px;
+      margin-top: 29px;
+
+      div:first-of-type {
+        margin-bottom: 10px;
+      }
+
+      div:last-of-type {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .aims {
+    background-color: rgba(74, 49, 33, 0.85);
+    padding-bottom: 71px;
+    padding-left: 22.3%;
+    padding-top: 94px;
+
+    .container {
+      text-align: left;
+      width: 472px;
+
+      div:first-of-type {
+        margin-bottom: 1em;
+      }
+
+      div:nth-of-type(2) {
+        margin-bottom: 55px;
+      }
+    }
+  }
+
+  .discussion {
+    padding-bottom: 137px;
+    padding-left: 33%;
+    padding-top: 67px;   
+
+    .container {
+      width: 676px;
+    }
+  }
+
+  .footer {
+    align-items: stretch;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-around;
+    padding-bottom: 53px;
+
+    .copyright {
+      align-items: flex-end;
+      align-self: center;
+      margin-top: 121px;
+    }
+
+    .left.tracking {
+      .title,
+      .content {
+        color: $carmine;
+      }
+    }
+
+    .right.relief {
+      .title,
+      .content {
+        color: $cello;
+      }
+    }
+  }
+}

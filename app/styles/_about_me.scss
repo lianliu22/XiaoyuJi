@@ -1,0 +1,33 @@
+.personal-info {
+  background-image: url("/images/personal_info/border.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: $white;
+  font-size: 18px / $font_default * 1em;
+  letter-spacing: 0.8px;
+  line-height: 1.56;
+  margin-bottom: 50vh;
+  margin-left: 9.65%;
+  margin-right: 6.21%;
+  margin-top: 100vh;
+  min-height: 1350px;
+  padding: 104px 6.7%;
+  position: relative;
+  text-align: left;
+
+  .letters {
+    position: absolute;
+  }
+
+  .container {
+    margin-left: 36%;
+    margin-top: 285px;
+    width: 54.90%;
+  }
+
+  .bold {
+    color: $white;
+    margin-top: 44px;
+    margin-bottom: 8px;
+  }
+}

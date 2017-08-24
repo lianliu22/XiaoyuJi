@@ -1,0 +1,102 @@
+.cases {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .title {
+    font-size: 36px / $font_default * 1em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: left;
+  }
+}
+
+.case {
+  margin-bottom: 133px;
+  max-width: 891px;
+  position: relative;
+  width: 80%;
+
+  button {
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    height: 79px;
+    letter-spacing: 3.1px;
+    text-transform: uppercase;
+    width: 219px;
+  }
+
+  img {
+    position: absolute;
+  }
+}
+
+.hashtags {
+  display: flex;
+}
+
+.hashtag {
+  color: $white;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  margin-right: 11px;
+  text-align: left;
+}
+
+.case.nerdwallet {
+  background-image: url('/images/cases/nerdwallet.svg');
+  height: 409px;
+  padding: 90px;
+  padding-left: 19.5%;
+  padding-top: 68px;
+
+  .hashtags {
+    margin-bottom: 28px;
+    margin-top: 20px;
+  }
+
+  img {
+    left: -22%;
+    top: 16px;
+  }
+
+  button {
+    background-color: $sienna;
+  }
+}
+
+.case.relief {
+  background-image: url('/images/cases/relief.svg');
+  height: 415px;
+  padding-left: 5.6%;
+  padding-top: 87px;
+
+  .hashtags {
+    margin: 17px 0 39px;
+  }
+
+  button {
+    background-color: $bismark;
+  }
+}
+
+.case.tracking {
+  background-image: url('/images/cases/tracking.svg');
+  height: 436px;
+  padding-left: 5.6%;
+  padding-top: 83px;
+
+  .hashtags {
+    margin: 31px 0 23px;
+  }
+
+  img {
+    right: 26px;
+    top: 6px;
+  }
+
+  button {
+    background-color: $tabasco;
+  }
+}
