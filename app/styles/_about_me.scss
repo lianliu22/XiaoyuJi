@@ -1,33 +1,48 @@
 .personal-info {
-  background-image: url("/images/personal_info/border.svg");
+  background-image: none;
   background-repeat: no-repeat;
   background-size: contain;
   color: $white;
   font-size: 18px / $font_default * 1em;
   letter-spacing: 0.8px;
   line-height: 1.56;
-  margin-bottom: 50vh;
-  margin-left: 9.65%;
-  margin-right: 6.21%;
-  margin-top: 100vh;
-  min-height: 1350px;
-  padding: 104px 6.7%;
+  margin: 50vh auto;
   position: relative;
   text-align: left;
+  width: 65%;
 
   .letters {
-    position: absolute;
+    display: none;
   }
 
   .container {
-    margin-left: 36%;
-    margin-top: 285px;
-    width: 54.90%;
+    width: 85%;
   }
 
   .bold {
     color: $white;
     margin-top: 44px;
     margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .personal-info {
+    background-image: url("/images/personal_info/border.svg");
+    height: 1125px;
+    padding: 6.7%;
+
+    .letters {
+      display: inline-block;
+      max-width: 330px;
+      position: absolute;
+      width: 33.67%;
+    }
+
+    .container {
+      margin-left: 36%;
+      margin-top: 29%;
+      width: 54.90%;
+    }
   }
 }

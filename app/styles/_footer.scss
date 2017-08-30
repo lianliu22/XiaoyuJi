@@ -1,6 +1,7 @@
 .footer {
   align-items: center;
   background-image: url('/images/footer/footer.svg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,6 +17,7 @@
   .left,
   .right {
     display: flex;
+    flex-direction: row;
   }
 
   .indicator {
@@ -38,12 +40,12 @@
   }
 
   .left .indicator {
-    background-image: url('/images/footer/left.svg');
+    background-image: url('/images/footer/mood-left.svg');
     margin-right: 22px;
   }
 
   .right .indicator {
-    background-image: url('/images/footer/right.svg');
+    background-image: url('/images/footer/relief-right.svg');
     margin-left: 22px;
     order: 2;
   }
@@ -52,13 +54,9 @@
 .contact {
   align-items: flex-end;
   display: flex;
+  justify-content: space-around;
   position: absolute;
   top: -102px;
-
-  .dribbble,
-  .instagram {
-    margin-right: 40px;
-  }
 
   .hello {
     align-self: flex-start;
@@ -73,5 +71,20 @@
     font-size: 18px / $font_default * 1em;
     letter-spacing: 1.5px;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .contact {
+    .dribbble,
+    .instagram {
+      margin-right: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contact {
+    width: 100%;
   }
 }

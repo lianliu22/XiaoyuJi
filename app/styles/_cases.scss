@@ -30,10 +30,15 @@
   img {
     position: absolute;
   }
+
+  .container {
+    width: 85%;
+  }
 }
 
 .hashtags {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hashtag {
@@ -44,11 +49,21 @@
   text-align: left;
 }
 
+.case {
+  display: flex;
+  justify-content: center;
+
+  img {
+    display: none;
+  }
+}
+
 .case.nerdwallet {
-  background-image: url('/images/cases/nerdwallet.svg');
+  background-image: none;
   height: 409px;
   padding: 90px;
-  padding-left: 19.5%;
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 68px;
 
   .hashtags {
@@ -56,20 +71,15 @@
     margin-top: 20px;
   }
 
-  img {
-    left: -22%;
-    top: 16px;
-  }
-
   button {
     background-color: $sienna;
   }
 }
 
-.case.relief {
-  background-image: url('/images/cases/relief.svg');
+.case.gingerio-relief {
+  background-image: none;
   height: 415px;
-  padding-left: 5.6%;
+  padding-left: 0;
   padding-top: 87px;
 
   .hashtags {
@@ -81,22 +91,105 @@
   }
 }
 
-.case.tracking {
-  background-image: url('/images/cases/tracking.svg');
+.case.mood {
+  background-image: none;
   height: 436px;
-  padding-left: 5.6%;
+  padding-left: 0;
   padding-top: 83px;
 
   .hashtags {
     margin: 31px 0 23px;
   }
 
-  img {
-    right: 26px;
-    top: 6px;
-  }
-
   button {
     background-color: $tabasco;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  .case {
+    display: block;
+    img {
+      display: inline-block;
+    }
+  }
+  .case.nerdwallet {
+    height: 409px;
+    padding: 90px;
+    padding-left: 19.5%;
+    padding-top: 68px;
+
+    .hashtags {
+      margin-bottom: 28px;
+      margin-top: 20px;
+    }
+
+    img {
+      left: -22%;
+      top: 16px;
+    }
+
+    button {
+      background-color: $sienna;
+    }
+  }
+
+  .case.gingerio-relief {
+    height: 415px;
+    padding-left: 5.6%;
+    padding-top: 87px;
+
+    .hashtags {
+      margin: 17px 0 39px;
+    }
+
+    button {
+      background-color: $bismark;
+    }
+  }
+
+  .case.mood {
+    height: 436px;
+    padding-left: 5.6%;
+    padding-top: 83px;
+
+    .hashtags {
+      margin: 31px 0 23px;
+    }
+
+    img {
+      right: 26px;
+      top: 6px;
+    }
+
+    button {
+      background-color: $tabasco;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1336px) {
+  .case.nerdwallet { 
+    padding-left: 234px;
+  }
+
+  .case.gingerio-relief,
+  .case.mood {
+    padding-left: 83px;
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .case.nerdwallet {
+    background-image: url('/images/cases/nerdwallet.svg');
+  }
+
+  .case.gingerio-relief {
+    background-image: url('/images/cases/relief.svg');
+  }
+
+  .case.mood {
+    background-image: url('/images/cases/tracking.svg');
   }
 }

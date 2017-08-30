@@ -1,15 +1,17 @@
 .case-detail-page {
   background-color: $sand;
 
+  .container {
+    width: 85%;
+  }
+
   .intro {
     background-color: $sienna-2;
+    display: flex;
+    justify-content: center;
     padding-bottom: 80px;
-    padding-left: 22.3%;
+    padding-left: 0;
     padding-top: 81px;
-
-    .container {
-      width: 35.3%;
-    }
 
     .title {
       font-size: 54px / $font_default * 1em;
@@ -35,13 +37,14 @@
 
   .aims {
     background-color: rgba(74, 49, 33, 0.85);
+    display: flex;
+    justify-content: center;
     padding-bottom: 71px;
-    padding-left: 22.3%;
+    padding-left: 0;
     padding-top: 94px;
 
     .container {
       text-align: left;
-      width: 472px;
 
       div:first-of-type {
         margin-bottom: 1em;
@@ -54,13 +57,11 @@
   }
 
   .discussion {
+    display: flex;
+    justify-content: center;
     padding-bottom: 137px;
-    padding-left: 33%;
+    padding-left: 0;
     padding-top: 67px;   
-
-    .container {
-      width: 676px;
-    }
   }
 
   .footer {
@@ -76,18 +77,90 @@
       margin-top: 121px;
     }
 
-    .left.tracking {
+    .mood {
       .title,
       .content {
         color: $carmine;
       }
     }
 
-    .right.relief {
+    .relief {
       .title,
       .content {
         color: $cello;
       }
+    }
+
+    .nerdwallet {
+      .title,
+      .content {
+        color: $sienna;
+      }
+    }
+  }
+
+  .page-navigation {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 220px;
+  }
+
+  &.relief {
+    .intro {
+      background-color: #2a5578;
+    }
+
+    .aims {
+      background-color: #f6eaea;
+    }
+  }
+
+  &.mood {
+    .intro {
+      background-color: $carmine;
+    }
+
+    .aims {
+      background-color: #f6eaea;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .case-detail-page {
+    .container {
+      max-width: 472px;
+    }
+
+    .intro {
+      justify-content: flex-start;
+      padding-left: 22.3%;
+
+      .container {
+        width: 35.3%;
+      }
+    }
+
+    .aims {
+      justify-content: flex-start;
+      padding-left: 22.3%;
+    }
+
+    .discussion {
+      display: block;
+      padding-left: 33%;
+
+      .container {
+        max-width: 676px;
+      }   
+    }
+  }
+}
+
+@media screen and (min-width: 651px) {
+  .case-detail-page {
+    .page-navigation {
+      flex-direction: row;
     }
   }
 }
